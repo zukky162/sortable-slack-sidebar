@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Sortable Slack Sidebar",
+  "description": "Make slack sidebar sortable.",
+  "version": "1.0",
+  "page_action": {
+    "default_title": "Sortable Slack Sidebar"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.slack.com/messages/*"
+      ],
+      "js": ["Sortable.js", "content.js"]
+    }
+  ]
+}
